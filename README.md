@@ -32,7 +32,7 @@ Step 2. Add the dependency
 
 ```{
     dependencies {
-	        implementation 'com.github.ibeshkar:Fetch:v1.3.0'
+	        implementation 'com.github.ibeshkar:Fetch:1.4.0'
     }
 ```
 
