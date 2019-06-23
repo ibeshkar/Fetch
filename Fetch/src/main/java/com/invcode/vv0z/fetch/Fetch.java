@@ -170,11 +170,14 @@ public class Fetch {
                 @Override
                 protected void onPostExecute(Response response) {
                     super.onPostExecute(response);
-
+                    if(response != null){
                     if (!response.getSuccess().isEmpty())
                         iResponse.OnSuccess(response.getSuccess());
                     else
                         iResponse.OnFailed(response.getFailed());
+                    }else {
+                        iResponse.OnFailed(FetchException.RESPONSE);
+                    }
                 }
 
             }.execute();
