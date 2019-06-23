@@ -3,8 +3,8 @@ package com.invcode.vv0z.fetch;
 
 public class Response {
 
-    private String Success;
-    private String Failed;
+    private String Success = "";
+    private String Failed = "";
 
     public String getSuccess() {
         return Success;
